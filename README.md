@@ -9,9 +9,9 @@ Table of contents
 
 <!--ts-->
    * [Notebooks](#Notebooks)
-      * [ASNM-TUN.ipynb](#ASNM-TUN.ipynb)
-      * [EDA.ipynb](#EDA.ipynb)
-      * [FFS.ipynb](#FFS.ipynb)
+      * [ASNM-TUN.ipynb](#ASNM-TUNipynb)
+      * [EDA.ipynb](#EDAipynb)
+      * [FFS.ipynb](#FFSipynb)
    * [Dataset Source](#dataset-source) 
    * [Dataset Statistics](#dataset-statistics)    
    * [Features selected from ASNM TUN Dataset](#features-selected-from-asnm-tun-dataset)
