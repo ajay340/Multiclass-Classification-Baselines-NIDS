@@ -8,6 +8,7 @@ Table of contents
 =================
 
 <!--ts-->
+   * [Technology Stack](#technology-stack)
    * [Notebooks](#Notebooks)
       * [ASNM-TUN.ipynb](#ASNM-TUNipynb)
       * [EDA.ipynb](#EDAipynb)
@@ -16,7 +17,15 @@ Table of contents
    * [Dataset Statistics](#dataset-statistics)    
    * [Features selected from ASNM TUN Dataset](#features-selected-from-asnm-tun-dataset)
    * [Results](#results)    
-<!--te-->    
+<!--te-->   
+
+Technology Stack
+================
+- Python 3.6
+- Keras, Tensorflow, sklearn, and numpy dependencies
+- Microsoft Azure Machine Learning Virtual Machine
+  - 14 GiB RAM
+  - 4 vCPU
 
 Notebooks
 ===========
@@ -97,7 +106,3 @@ K Nearest Neighbors | 82.24%
 Random Forest | 85.78%
 Linear Support Vector Classifier | 14.99%
 
-
-Created by
-----------
-Ajay Shah, Davis Cook, Sophine Clachar, and Manfred Minimair.
