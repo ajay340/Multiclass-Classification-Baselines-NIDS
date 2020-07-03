@@ -3,6 +3,21 @@
 
 This repository contains jupyter notebooks for applying machine learning classification algorithms for enhancements in Network Intrusion Detection Systems.
 
+Table of contents
+=================
+
+<!--ts-->
+   * [Notebooks](#Notebooks)
+      * [ASNM-TUN.ipynb](#ASNM-TUN.ipynb)
+      * [EDA.ipynb](#EDA.ipynb)
+      * [FFS.ipynb](#FFS.ipynb)
+   * [Dataset Source](#dataset-source) 
+   * [Dataset Statistics](#dataset-statistics)    
+   * [Features selected from ASNM TUN Dataset](#features-selected-from-asnm-tun-dataset)
+   * [Results](#results)    
+<!--te-->    
+
+# Notebooks
 ## ASNM-TUN.ipynb
 This notebook contains the Malware NIDS baselines using neural networks, decision trees, random forests, and support vector classifiers.
 
@@ -12,21 +27,13 @@ This notebook contains the compilation of the profile of the attributes in the d
 ## FFS.ipynb
 This notebook contains the select features used for the baselines using Forward Feature Selection with cross validation.
 
-## Dataset Source
+# Dataset Source
 [ASNM Datasets](www.fit.vutbr.cz/~ihomoliak/asnm/index.html)
 
 [ASNM Datasets: A Collection of Network Traffic Data for Testing of Adversarial Classifiers and Network Intrusion Detectors](https://ieee-dataport.org/open-access/asnm-datasets-collection-network-traffic-data-testing-adversarial-classifiers-and)
 
-## Results
-Comparison of 5 Neural Networks using Adam optimizer's measured accuracy over 1200 epochs.
-![NN Adam Optimizer Accuracy](https://github.com/ajay340/Multiclass-Classification-Baselines-NIDS/blob/master/images/adam_accuracy.png)
-
-
-Comparison of 5 Neural Networks using SGD optimizer's measured accuracy over 1200 epochs.
-![NN SGD Optimizer Accuracy](https://github.com/ajay340/Multiclass-Classification-Baselines-NIDS/blob/master/images/sgd_accuracy.png)
-
-
-Dataset statistics | Measured
+# Dataset Statistics
+Attribute | Measured
 ------------ | -------------
 Number of variables | 895
 Number of observations | 394
@@ -38,18 +45,7 @@ Total size in memory | 2.7 MiB
 Average record size in memory | 7.0 KiB
 
 
-Average scores for Baselines
-Baseline | Averages
--------- | --------
-Neural Network with Adam optimizer | 79.18%
-Neural Network with SGD optimizer | 69.30%
-Decision Tree | 87.57%
-K Nearest Neighbors | 82.24%
-Random Forest | 85.78%
-Linear Support Vector Classifier | 14.99%
-
-
-Features selected from ASNM TUN Dataset
+# Features selected from ASNM TUN Dataset
 Attribute | Description
 --------- | -----------
 PolyInd10ordOut[3] | Outbound packet length of 10th polynomial of a packet occurrences, representing the 4th coefficient of the polynomial.
@@ -72,6 +68,25 @@ OutPktLen4s10i[3] | Outbound packets occurred in the first 4 seconds of a connec
 PolyInd13ordOut[13] | Outbound communication by polynomial of 13th order in the 14th index domain of packet occurrences.
 PolyInd13ordIn[12] | Inbound communication by polynomial of 13th order in the 13th index domain of packet occurrences.
 InPkt64s20iTr2KB[7] | Inbound packets occurred in the first 64 seconds of a connection distributed into 20 intervals, each after accumulation of 2KB of data on the 8th interval.
+
+# Results
+Comparison of 5 Neural Networks using Adam optimizer's measured accuracy over 1200 epochs.
+![NN Adam Optimizer Accuracy](https://github.com/ajay340/Multiclass-Classification-Baselines-NIDS/blob/master/images/adam_accuracy.png)
+
+
+Comparison of 5 Neural Networks using SGD optimizer's measured accuracy over 1200 epochs.
+![NN SGD Optimizer Accuracy](https://github.com/ajay340/Multiclass-Classification-Baselines-NIDS/blob/master/images/sgd_accuracy.png)
+
+
+Average scores for Baselines
+Baseline | Averages
+-------- | --------
+Neural Network with Adam optimizer | 79.18%
+Neural Network with SGD optimizer | 69.30%
+Decision Tree | 87.57%
+K Nearest Neighbors | 82.24%
+Random Forest | 85.78%
+Linear Support Vector Classifier | 14.99%
 
 
 ##### Created by
